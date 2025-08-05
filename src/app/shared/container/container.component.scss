@@ -1,0 +1,7 @@
+/*aplicação dos estilos no container*/
+:host {
+  display: block;
+  margin: 0 auto; /*centralizar horizontalmente no meio da tela*/
+  max-width: 1048px; /*largura máxima do container*/
+  width: 90%; /*largura do container*/
+}

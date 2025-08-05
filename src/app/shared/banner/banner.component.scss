@@ -1,0 +1,8 @@
+figure {
+  margin: 0; /*remover espaçamento padrão do figure*/
+  img {
+    width: 100%; /*ocupar a tela toda com responsividade*/
+    height: auto;
+    display: block;
+  }
+}
