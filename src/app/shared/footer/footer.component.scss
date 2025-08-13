@@ -1,0 +1,40 @@
+footer {
+  .mat-toolbar {
+    background-color: var(--background-color-toolbar);
+    color: var(--background-color);
+    padding: 0 256px;
+    height: 232px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      height: 40px;
+      width: 161px;
+    }
+  }
+
+  .footer-text {
+    margin-left: 16px;
+    font-size: 14px;
+    font-weight: 200;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .redes-container {
+    img {
+      height: 32px;
+      width: 32px;
+      margin: 0 8px;
+    }
+  }
+}
