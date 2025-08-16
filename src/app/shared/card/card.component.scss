@@ -1,0 +1,13 @@
+/*configs a serem usadas na classe card e primary*/
+.card{
+  padding: 24px;
+  &.primary{
+    background-color: var(--backgroud-card);
+    border: 1px solid var(--border-card);
+    border-radius: 12px;
+  } /*config para a classe secondary*/
+  &.secondary{
+    background-color: var(--background-color);
+    border-radius: 16px;
+  }
+}

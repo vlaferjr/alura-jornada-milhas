@@ -1,0 +1,18 @@
+.card-depoimento {
+  width: 330px;
+  max-height: 216px;
+  background-color: var(--backgroud-card);
+  display: -webkit-box;
+  text-align: justify;
+
+  img {
+    width: 56px;
+    height: 56px;
+  }
+
+  mat-card-content {
+    font-size: 12px;
+    color: #1d1b20;
+    width: 65%;
+  }
+}
