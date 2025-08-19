@@ -1,0 +1,70 @@
+<!--variant secondary deixa o background cinza-->
+<app-card variant="secondary" class="form-busca">
+  <form>
+    <h2>Passagens</h2>
+    <div class="flex-container">
+      <p>
+        <!--botões para checar ida e volta ou somente ida-->
+        <mat-button-toggle-group aria-label="Tipo de passagem">
+          <mat-button-toggle>
+            <!--ícone do check-->
+            <mat-icon>check small</mat-icon>
+            Ida e Volta
+          </mat-button-toggle>
+          <mat-button-toggle>
+            Somente ida
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+      </p>
+      <!--chips - tags-->
+      <mat-chip-listbox aria-label="Seleção de passagens">
+        <mat-chip-option selected>1 Adulto</mat-chip-option>
+        <mat-chip-option>Econômica</mat-chip-option>
+      </mat-chip-listbox>
+    </div>
+    <!--inputs de origem e destino-->
+    <div class="flex-container">
+      <mat-form-field class="input-container" appearance="outline">
+        <mat-label>Origem</mat-label>
+        <mat-icon matPrefix>
+          flight_takeoff</mat-icon>
+        <input matInput placeholder="Origem">
+        <!--matSuffix - adiciona o ícone no final do imput
+        matPreffix - adiciona o ícone no começo do input-->
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+      <!--botão que alterna origem e destino-->
+      <button mat-icon-button>
+        <mat-icon>sync_alt</mat-icon>
+      </button>
+      <!-- input de destino-->
+      <mat-form-field class="input-container" appearance="outline">
+        <mat-label>Destino</mat-label>
+        <mat-icon matPrefix>
+          flight_land</mat-icon>
+        <input matInput placeholder="Origem">
+        <!--matSuffix - adiciona o ícone no final do imput
+        matPreffix - adiciona o ícone no começo do input-->
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+      <!--input de data-->
+      <mat-form-field class="input-container" appearance="outline">
+        <mat-label>Data de ida</mat-label>
+        <input matInput [matDatepicker]="ida" placeholder="Selecione">
+        <mat-datepicker-toggle matIconSuffix [for]="ida"></mat-datepicker-toggle>
+        <mat-datepicker #ida></mat-datepicker>
+      </mat-form-field>
+      <!--input de data-->
+      <mat-form-field class="input-container" appearance="outline">
+        <mat-label>Data de volta</mat-label>
+        <input matInput [matDatepicker]="volta" placeholder="Selecione">
+        <mat-datepicker-toggle matIconSuffix [for]="volta"></mat-datepicker-toggle>
+        <mat-datepicker #volta></mat-datepicker>
+      </mat-form-field>
+      <!--botão pesquisar-->
+      <button mat-flat-button color="primary">
+        Buscar
+      </button>
+    </div>
+  </form>
+</app-card>
