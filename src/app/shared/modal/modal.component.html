@@ -3,7 +3,7 @@
   <div mat-dialog-actions>
     <div class="selecao-idade">
       <ul>
-        <li>Adultos</li>
+        <div class="categoria">Adultos</div>
         <li>(Acima de 12 anos)</li>
         <li>
           <button mat-mini-fab-button class="decremento">
@@ -19,7 +19,7 @@
       </ul>
 
       <ul>
-        <li>Crianças</li>
+        <div class="categoria">Crianças</div>
         <li>(2 a 12 anos)</li>
         <li>
           <button mat-mini-fab-button class="decremento">
@@ -35,7 +35,7 @@
       </ul>
 
       <ul>
-        <li>Bebês</li>
+        <div class="categoria">Bebês</div>
         <li>(Abaixo de 2 anos)</li>
         <li>
           <button mat-mini-fab-button class="decremento">
@@ -50,6 +50,24 @@
         </li>
       </ul>
     </div>
-    <button mat-button mat-dialog-close>Close</button>
+
+    <div class="classe">
+      <ul>
+        <div class="categoria">Classe</div>
+        <mat-chip-listbox aria-label="Seleção de passagens">
+          <mat-chip-option selected>Econômica</mat-chip-option>
+          <mat-chip-option>Executiva</mat-chip-option>
+        </mat-chip-listbox>
+      </ul>
+    </div>
+
+    <div class="botoes">
+      <button mat-flat-button color="accent">
+         Cancelar
+       </button>
+        <button mat-flat-button color="primary">
+         Aplicar
+       </button>
+    </div>
   </div>
 </section>
